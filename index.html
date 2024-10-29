@@ -15,27 +15,39 @@
         </div>
         <div class="box">
             <div class="menu">
-                <div id="option1" class="option" onclick="projects()">projects</div>
-                <div id="option2" class="option" onclick="connect(this.id)">work</div>
-                <div id="option3" class="option" onclick="connect(this.id)">about</div>
-                <div id="option4" class="option" onclick="connect(this.id)">new</div>
-                <div id="option5" class="option" onclick="connect(this.id)">social</div>
+                <div id="option1" class="option" onclick="toggleSection('projects')">projects</div>
+                <div id="option2" class="option" onclick="toggleSection('work')">work</div>
+                <div id="option3" class="option" onclick="toggleSection('about')">about</div>
+                <div id="option4" class="option" onclick="toggleSection('social')">social</div>
+                <div id="option5" class="option" onclick="toggleSection('others')">others</div>
             </div>
             <div class="content">
                 <div id="landing" class="landing">
                     <pre>Remember to choose options,
 you always have more.
-    
+
 Choose one from above ❤.</pre>
                 </div>
-                <div id="projects" class="projects">
+                <div id="projects" class="preview">
                     <a href="#">ProjectA</a>
                     <a href="#">ProjectB</a>
                     <a href="#">ProjectC</a>
                     <a href="#">ProjectD</a>
                 </div>
+                <div id="work" class="preview">
+                    Work content here
+                </div>
+                <div id="about" class="preview">
+                    About content here
+                </div>
+                <div id="social" class="preview">
+                    Social content here
+                </div>
+                <div id="others" class="preview">
+                    Other content here
+                </div>
             </div>
-        </div>
+        </div>        
     </div>
 
     <script src="script.js"></script>
