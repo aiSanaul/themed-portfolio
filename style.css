@@ -105,13 +105,19 @@ body::-webkit-scrollbar {
 #projects {
     background-color: var(--fuchsia);
     display: none;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 8px;
     justify-content: center;
-    padding: 8px;
+    
+    & .box {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+        justify-content: center;
+        padding: 8px;
+    }
 }
 
-#projects a {
+.box a {
     text-decoration: none;
     font-size: 44px;
     font-family: Elicen;
@@ -127,9 +133,47 @@ body::-webkit-scrollbar {
 }
 
 #work {
-    justify-content: center;
+    width: 100%;
     background-color: var(--fuchsia);
     display: none;
+    justify-items: center;
+    padding: 1rem;
+}
+
+#work .doneBefore {
+    width: 60%;
+    height: 100%;
+    background-color: var(--paleLavender);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+    & :hover {
+        background-color: rgb(168, 147, 206);
+    }
+
+    & #header {
+        background-color: var(--fuchsia);
+
+        & :hover {
+            background-color: transparent;
+        }
+    }
+
+    & .column {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 24px;
+        text-align: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+    }
 }
 
 #about {
