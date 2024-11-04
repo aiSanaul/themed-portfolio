@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-@font-face { 
+@font-face {
     font-family: Elicen;
     src: url('font/elicen.ttf');
 }
@@ -33,8 +33,12 @@ body::-webkit-scrollbar {
     display: grid;
     padding: 3em;
     justify-content: center;
+    color: white;
+    text-shadow: 2px 2px black;
     background-color: var(--babyPink);
+    background-image: url(images/logobg.png);
     cursor: default;
+    
 }
 
 .logo p {
@@ -106,18 +110,18 @@ body::-webkit-scrollbar {
     background-color: var(--fuchsia);
     display: none;
     justify-content: center;
-    
-    & .box {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 8px;
-        justify-content: center;
-        padding: 8px;
-    }
 }
 
-.box a {
+#projects .box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    justify-content: center;
+    padding: 8px;
+}
+
+#projects .box a {
     text-decoration: none;
     font-size: 44px;
     font-family: Elicen;
@@ -140,7 +144,7 @@ body::-webkit-scrollbar {
     padding: 1rem;
 }
 
-#work .doneBefore {
+.doneBefore {
     width: 60%;
     height: 100%;
     background-color: var(--paleLavender);
@@ -154,42 +158,97 @@ body::-webkit-scrollbar {
     & :hover {
         background-color: rgb(168, 147, 206);
     }
+}
 
-    & #header {
-        background-color: var(--fuchsia);
+.doneBefore #header {
+    background-color: var(--fuchsia);
 
-        & :hover {
-            background-color: transparent;
-        }
-    }
-
-    & .column {
-        width: 80%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-content: center;
-        gap: 1rem;
-        font-size: 24px;
-        text-align: center;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-        padding: 1rem;
+    & :hover {
+        background-color: transparent;
     }
 }
 
-#about {
+.doneBefore .column {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
+    gap: 1rem;
+    font-size: 24px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+}
+
+#about {
+    width: 100%;
+    justify-items: center;
+    padding: 1rem;
     background-color: var(--fuchsia);
     display: none;
-} 
+}
+
+#about .box {
+    width: 60%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--paleLavender);
+    border-radius: 1rem;
+}
+
+#about .card {
+    width: 50%;
+    display: flex;
+    border: 5px solid var(--fuchsia);
+    border-radius: 1rem;
+    background-color: var(--babyPink);
+}
+
+#about .photo {
+    display: grid;
+}
+
+#about .photo img {
+    width: 200px;
+    border: 2px dashed black;
+    padding: 1rem;
+    rotate: -8deg;
+}
+
+#about .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#about .info h1 {
+    font-size: 46px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+#about .info p {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+}
 
 #social {
-    justify-content: center;
+    width: 100%;
+    justify-items: center;
+    padding: 1rem;
     background-color: var(--fuchsia);
     display: none;
 }
 
 #others {
-    justify-content: center;
+    width: 100%;
+    justify-items: center;
+    padding: 1rem;
     background-color: var(--fuchsia);
     display: none;
 }
