@@ -135,7 +135,8 @@ body::-webkit-scrollbar {
     padding: 1em;
 
     &:hover {
-        opacity: 60%;
+        background-color: hsl(287, 28%, 83%);
+        border: 2px solid rgb(226, 166, 176);
     }
 }
 
@@ -292,4 +293,16 @@ body::-webkit-scrollbar {
     padding: 1rem;
     background-color: var(--fuchsia);
     display: none;
+}
+
+#others .box {
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--paleLavender);
+    border-radius: 1rem;
+}
+
+#others .box p {
+    font-size: 40px;
 }
