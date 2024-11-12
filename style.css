@@ -9,6 +9,10 @@
     src: url('font/elicen.ttf');
 }
 
+body {
+    background-color: black;
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -38,6 +42,7 @@ body::-webkit-scrollbar {
     text-shadow: 2px 2px black;
     background-color: var(--babyPink);
     background-image: url(images/logobg.png);
+    background-size: cover;
     cursor: default;
     
 }

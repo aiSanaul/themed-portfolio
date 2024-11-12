@@ -1,0 +1,116 @@
+.logo {
+    padding: 2em;
+}
+
+.logo p {
+    font-size: 50px;
+}
+
+.menu {
+    gap: 5px;
+    padding: 0px 5px 0px 5px;
+}
+
+.menu .option {
+    padding: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.content {
+    padding: 5px;
+    padding-top: 0;
+}
+
+.landing pre {
+    font-size: 30px;
+    font-family: Elicen;
+}
+
+#projects {
+    padding: 1rem;
+}
+
+#projects .box {
+    width: 80%;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#projects .box a {
+    font-size: 32px;
+    padding: 1rem;
+}
+
+#work {
+    width: 100%;
+}
+
+.doneBefore {
+    width: 80%;
+    padding: 8px;
+}
+
+.doneBefore .column {
+    width: 60%;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#about .box {
+    width: 80%;
+    height: 100%;
+}
+
+#about .box::-webkit-scrollbar {
+    display: none;
+}
+
+#about .hook {
+    padding-top: 8rem;
+}
+
+#about .card {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    border: 5px solid var(--fuchsia);
+    border-radius: 1rem;
+    background-color: var(--babyPink);
+}
+
+#about .photo {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .photo img {
+    width: 190px;
+    padding: 8px;
+}
+
+#about .info h1 {
+    font-size: 42px;
+}
+
+#about .info p {
+    font-size: 20px;
+}
+
+#social .box {
+    width: 80%;
+}
+
+#social .case {
+    width: 50%;
+}
+
+#others .box {
+    width: 80%;
+}
+
+#others .box p {
+    font-size: 38px;
+}
