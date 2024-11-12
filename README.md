@@ -5,3 +5,10 @@ Imagine a portfolio that’s designed like a video game. The moment you open it,
 
 Layout View:
 ![ripme](https://github.com/user-attachments/assets/63347c65-fbe1-4b4f-925d-6a80356a35c1)
+
+End-user View:
+(demo)
+![demo](https://github.com/user-attachments/assets/116d758d-0a38-47d7-8bbc-f8b7d7424e37)
+
+(responsive)
+![responsive](https://github.com/user-attachments/assets/29940b3c-cfe3-4fd2-b68c-1576132b0fb6)
